@@ -1,0 +1,112 @@
+body{
+    background: #0d1521;
+    font-family: tahoma;
+    color: #989898;
+}
+
+.nav-bar {
+    padding-inline-start: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.main-header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.own-flag-header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.info-header {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.flag-list {
+    list-style: none;
+    text-align: center;
+    padding-inline-start: 0;
+}
+
+.flag {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.image-icon {
+    width : 100px;
+    height: 58px;
+}
+
+.color-list {
+    padding-inline-start: 0;
+    position: relative;
+    list-style: none;
+    text-align: center;
+}
+
+.box {
+    width: 20px;
+    height: 20px;
+}
+
+.color-btn {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.form {
+    position: relative;
+    text-align: center;
+}
+
+.red-box {
+    background: red;
+}
+
+.orange-box {
+    background: orange;
+}
+
+.yellow-box {
+    background: yellow;
+}
+
+.green-box {
+    background: green;
+}
+
+.blue-box {
+    background: blue;
+}
+
+.purple-box {
+    background: purple;
+}
+
+.pink-box {
+    background: salmon;
+}
+
+.black-box {
+    background: black;
+}
+
+.white-box {
+    background: white;
+
+}
+
+.brown-box {
+    background: #8B4513;
+}
+

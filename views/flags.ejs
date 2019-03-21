@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>What's that Flag</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+        <link href="/assets/styles.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="/assets/flags.js"></script>
+
+    </head>
+
+    <body>
+        <% include partials/nav.ejs %>
+        <header>
+            <h1 class= "main-header">Flags of the world</h1>
+            <h2 class= "flag-info info-header"></h2>
+        </header>
+
+        <div class="color-container">
+            <ul class= "color-list">
+                <li class="color-btn red-btn">
+                    <div id="red" class= "box red-box"></div>
+                </li>
+                <li class="color-btn orange-btn">
+                    <div id= "orange" class= "box orange-box"></div>
+                </li>
+                <li class="color-btn yellow-btn">
+                    <div id="yellow" class= "box yellow-box"></div>
+                </li>
+                <li class="color-btn green-btn">
+                    <div id="green" class= "box green-box"></div>
+                </li>
+                <li class="color-btn blue-btn">
+                    <div id= "blue" class= "box blue-box"></div>
+                </li>
+                <li class="color-btn purple-btn">
+                    <div id= "purple" class= "box purple-box"></div>
+                </li>
+                <li class="color-btn pink-btn">
+                    <div id="pink" class= "box pink-box"></div>
+                </li>
+                <li class="color-btn black-btn">
+                    <div id="black" class= "box black-box"></div>
+                </li>
+                <li class="color-btn white-btn">
+                    <div id="white" class= "box white-box"></div>
+                </li>
+                <li class="color-btn brown-btn">
+                    <div id="brown" class= "box brown-box"></div>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <ul class= "flag-list">
+                <% for(var i = 0; i < flags.length; i++){ %>
+                <li id = "<%= flags[i].country %>"class= "flag show <%= flags[i].colors.join(' ')%>"><img src= <%= flags[i].image %> class= "image-icon"></li>
+                <% } %>
+
+            </ul>
+        </div>
+    </body>
+
+</html>

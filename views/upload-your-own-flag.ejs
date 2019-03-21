@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Upload your own flag</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+        <link href="/assets/styles.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="/assets/flags.js"></script>
+
+    </head>
+
+    <body>
+        <% include partials/nav.ejs %>
+        <header>
+            <h1 class="own-flag-header">Upload your own flag!</h1>
+        </header>
+
+
+        <form class="form" action="/flags" method="post" enctype="multipart/form-data">
+            Country name:<br>
+            <input type="text" name="country" placeholder="Your country"><br>
+            <br>
+            Colors of the flag:<br>
+            <div class = "color-checkbox-list">
+                <input type="checkbox" name="colors" value="red">red<br>
+                <input type="checkbox" name="colors" value="orange">orange<br>
+                <input type="checkbox" name="colors" value="yellow">yellow<br>
+                <input type="checkbox" name="colors" value="green">green<br>
+                <input type="checkbox" name="colors" value="blue">blue<br>
+                <input type="checkbox" name="colors" value="purple">purple<br>
+                <input type="checkbox" name="colors" value="pink">pink<br>
+                <input type="checkbox" name="colors" value="black">black<br>
+                <input type="checkbox" name="colors" value="white">white<br>
+                <input type="checkbox" name="colors" value="brown">brown<br>
+            </div>
+            <br>
+            <input type="file" name="file" id="fileToUpload">
+            <input type="submit" value="Submit" name="submit">
+        </form>
+
+    </body>
+
+</html>
