@@ -29,7 +29,7 @@ module.exports = function(app){
     mongoose.connection.once('open', function(){
         console.log('Connection has been made. Now make fireworks....');
     }).on('error', function(error){
-        console.log('Connection error:' + error);
+        throw error;
     });
 
 
