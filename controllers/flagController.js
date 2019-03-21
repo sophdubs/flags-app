@@ -51,7 +51,7 @@ module.exports = function(app){
     });
 
 
-    app.get('/flags', function(req, res){
+    app.get('/', function(req, res){
         res.render('flags', {flags: flags});
     });
 
@@ -59,7 +59,7 @@ module.exports = function(app){
         res.render('upload-your-own-flag');
     });
 
-    app.post('/flags', upload.single('file'), function(req, res){
+    app.post('/', upload.single('file'), function(req, res){
         var splitCountry = (req.body.country.split(' '));
         var countryName = [];
 
