@@ -13,7 +13,13 @@ module.exports = function(app){
       filename: function (req, file, cb) {
         var arr = file.originalname.split('.');
         var ext = arr[arr.length - 1];
-        cb(null, req.body.country.toLowerCase().replace(' ','_') + '.' + ext);
+        var temp = req.body.country.toLowerCase().split(' ').join('-');
+        if (temp.charAt(temp.length - 1) === "-"){
+            temp = temp.replace(/.$/,".") + "png";
+        }
+        else {temp = temp + ".png"};
+
+        cb(null, temp);
       }
     });
 
